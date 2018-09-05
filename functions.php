@@ -89,24 +89,24 @@ if ( ! function_exists( 'gutenbergtheme_setup' ) ) :
 		// Add support for custom color scheme.
 		add_theme_support( 'editor-color-palette', array(
 			array(
-				'name'  => __( 'Strong Blue', 'gutenbergtheme' ),
-				'slug'  => 'strong-blue',
-				'color' => '#0073aa',
+				'name'  => __( 'Warm Gray', 'gutenbergtheme' ),
+				'slug'  => 'warm-gray',
+				'color' => '#d7d2cb',
 			),
 			array(
-				'name'  => __( 'Lighter Blue', 'gutenbergtheme' ),
-				'slug'  => 'lighter-blue',
-				'color' => '#229fd8',
+				'name'  => __( 'Clay', 'gutenbergtheme' ),
+				'slug'  => 'clay',
+				'color' => '#a7947b',
 			),
 			array(
-				'name'  => __( 'Very Light Gray', 'gutenbergtheme' ),
-				'slug'  => 'very-light-gray',
-				'color' => '#eee',
+				'name'  => __( 'Blue Ridge', 'gutenbergtheme' ),
+				'slug'  => 'blue-ridge',
+				'color' => '#00667d',
 			),
 			array(
-				'name'  => __( 'Very Dark Gray', 'gutenbergtheme' ),
-				'slug'  => 'very-dark-gray',
-				'color' => '#444',
+				'name'  => __( 'Dark Oak', 'gutenbergtheme' ),
+				'slug'  => 'dark-oak',
+				'color' => '#32261e',
 			),
 		) );
 	}
@@ -121,7 +121,7 @@ add_action( 'after_setup_theme', 'gutenbergtheme_setup' );
  * @global int $content_width
  */
 function gutenbergtheme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'gutenbergtheme_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'gutenbergtheme_content_width', 950 );
 }
 add_action( 'after_setup_theme', 'gutenbergtheme_content_width', 0 );
 
@@ -136,22 +136,14 @@ function gutenbergtheme_fonts_url() {
 	 * supported by Noto Serif, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$notoserif = esc_html_x( 'on', 'Noto Serif font: on or off', 'gutenbergtheme' );
+	$font_families = ["Playfair Display", "Roboto Condensed", "Work Sans"];
 
-	if ( 'off' !== $notoserif ) {
-		$font_families = array();
-		$font_families[] = 'Noto Serif:400,400italic,700,700italic';
-
-		$query_args = array(
-			'family' => urlencode( implode( '|', $font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
-		);
-
-		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-	}
-
+	$query_args = array(
+		'family' => urlencode( implode( '|', $font_families ) ),
+		'subset' => urlencode( 'latin,latin-ext' ),
+	);
+	$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 	return $fonts_url;
-
 }
 
 /**
@@ -160,6 +152,7 @@ function gutenbergtheme_fonts_url() {
 function gutenbergtheme_scripts() {
 	wp_enqueue_style( 'gutenbergbase-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'gutenbergthemebase-style', get_template_directory_uri() . '/css/base.css' );
 	wp_enqueue_style( 'gutenbergthemeblocks-style', get_template_directory_uri() . '/css/blocks.css' );
 
 	wp_enqueue_style( 'gutenbergtheme-fonts', gutenbergtheme_fonts_url() );

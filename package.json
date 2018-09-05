@@ -1,0 +1,18 @@
+{
+  "name": "gutenberg-starter-theme",
+  "version": "1.0.0",
+  "description": "Dev workflow for gutenberg theme",
+  "main": "index.js",
+  "repository": "https://github.com/csb324/gutenberg-starter-theme.git",
+  "author": "Clara Beyer <csb324@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "node-sass scss --output css -r -w",
+		"reload": "livereload css -d"
+	},
+  "dependencies": {
+    "livereload": "^0.7.0",
+    "node-sass": "^4.9.3",
+    "watch": "^1.0.2"
+  }
+}

@@ -4,15 +4,22 @@ $padding-base: 14px;
 $color-text: #444444;
 $color-heading: #32373c;
 $color-muted-text: #929292;
+//
+//$color-link: #0073aa;
+//$color-link-hover: #00a0d2;
+//$color-1: #21759b;
 
-$color-link: #0073aa;
-$color-link-hover: #00a0d2;
-$color-1: #21759b;
-
+$white: #ffffff;
 $warm-gray: #d7d2cb;
 $clay: #a7947b;
 $blue-ridge: #00667d;
 $dark-oak: #32261e;
+
+$color-link: $blue-ridge;
+$color-link-hover: $blue-ridge;
+
+$color-1: #21759b;
+
 
 $typography-serif: "Playfair Display", Monaco, 'Times New Roman', Times, serif;
 $typography-condensed: "Roboto Condensed", Arial, Helvetica, sans-serif;

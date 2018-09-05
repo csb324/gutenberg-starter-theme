@@ -15,7 +15,7 @@ textarea {
   line-height: 1.8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .cw-site-title {
 	color: $color-heading;
 	font-family: $typography-serif;
 	font-weight: 400;
@@ -74,29 +74,4 @@ big {
 
 .archive .site-header {
 	margin-bottom: 3.5em;
-}
-
-.site-title {
-	margin: .4375em 0 0;
-	font-size: 38px;
-	line-height: 1.2;
-	color: $color-heading;
-}
-
-.site-title a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.site-branding {
-	margin-bottom: 1.75em;
-}
-
-.site-description {
-	margin: .4375em 0 0;
-	font-size: 17px;
-	font-weight: inherit;
-	line-height: 1.4;
-	word-wrap: break-word;
-	color: $color-muted-text;
 }

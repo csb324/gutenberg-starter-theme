@@ -13,13 +13,14 @@ get_header(); ?>
 
 	<?php
 	if ( have_posts() ) : ?>
-
-		<header class="page-header">
-			<h1 class="page-title"><?php
-				/* translators: %s: search query. */
-				printf( esc_html__( 'Search Results for: %s', 'gutenbergtheme' ), '<span>' . get_search_query() . '</span>' );
-			?></h1>
-		</header><!-- .page-header -->
+		<div class="entry-header-container">
+			<header class="entry-header">
+				<h1 class="entry-title"><?php
+					/* translators: %s: search query. */
+					printf( esc_html__( 'Search Results for: %s', 'gutenbergtheme' ), '<span>' . get_search_query() . '</span>' );
+				?></h1>
+			</header><!-- .page-header -->
+		</div>
 
 		<?php
 		/* Start the Loop */

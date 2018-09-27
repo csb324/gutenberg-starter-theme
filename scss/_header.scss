@@ -8,7 +8,7 @@
   top: 0;
 
   a {
-	color: $white;
+		color: $white;
   }
 
   padding: 5px 20px;
@@ -67,6 +67,7 @@
 
 // small screens: show toggled nav
 @media screen and (max-width: 37.5em) {
+
   .cw-main-navigation.toggled ul {
 	display: block;
 	margin: 0 auto;

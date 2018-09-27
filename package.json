@@ -8,7 +8,8 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "node-sass scss --output css -r -w",
-		"reload": "livereload css -d"
+		"reload": "livereload css -d",
+		"build": "node-sass scss --output css -r"
 	},
   "dependencies": {
     "livereload": "^0.7.0",

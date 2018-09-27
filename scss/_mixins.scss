@@ -4,3 +4,13 @@
   font-weight: 300;
   letter-spacing: 1px;
 }
+
+@mixin custom-color($hex, $name) {
+	.has-#{$name}-color {
+		color: $hex;
+	}
+	.has-#{$name}-background-color {
+		background-color: $hex;
+	}
+
+}

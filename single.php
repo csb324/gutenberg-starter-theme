@@ -13,7 +13,23 @@ get_header(); ?>
 
 	<?php
 	while ( have_posts() ) : the_post();
+		// check if the post or page has a Featured Image assigned to it.
+		$header_background = "";
 
+		if ( has_post_thumbnail() ) {
+			$featured_image = get_the_post_thumbnail_url();
+			$header_background = "background: url('" . $featured_image . "'); background-size: cover; background-position: center;";
+		}
+		?>
+
+		<div class="entry-header-container" style="<?= $header_background ?>">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+
+		</div>
+
+	<?php
 		get_template_part( 'template-parts/content', get_post_type() );
 
 		the_post_navigation( array(

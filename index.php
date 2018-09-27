@@ -29,6 +29,20 @@ get_header(); ?>
 
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
+				$header_background = "";
+				if ( has_post_thumbnail() ) {
+					$featured_image = get_the_post_thumbnail_url();
+					$header_background = "background: url('" . $featured_image . "'); background-size: cover; background-position: center;";
+				}
+				?>
+				<div class="entry-header-container" style="<?= $header_background ?>">
+					<header class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header><!-- .entry-header -->
+
+				</div>
+
+			<?php
 
 			/*
 				* Include the Post-Format-specific template for the content.

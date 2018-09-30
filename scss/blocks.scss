@@ -2,7 +2,7 @@
 @import "mixins";
 
 .entry-content > *, .block-container {
-  margin: 36px auto;
+  margin: 18px auto;
   max-width: $content-width;
   padding-left: $padding-base;
   padding-right: $padding-base;
@@ -15,6 +15,10 @@
 .entry-content > .alignfull {
   margin: 1.5em 0;
   max-width: 100%;
+}
+
+.entry-content > .castleton-hero {
+	margin-top: 0;
 }
 
 .entry-content ul,
@@ -147,3 +151,5 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 @include custom-color($clay, 'clay');
 @include custom-color($blue-ridge, 'blue-ridge');
 @include custom-color($dark-oak, 'dark-oak');
+@include custom-color($white, 'white');
+@include custom-color($almost-black, 'almost-black');

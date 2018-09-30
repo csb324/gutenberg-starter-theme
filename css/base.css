@@ -4,6 +4,9 @@
   font-weight: 300;
   letter-spacing: 1px; }
 
+body {
+  -webkit-font-smoothing: antialiased; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -410,6 +413,8 @@ a:hover, a:active {
 #page {
   margin: 0 auto;
   max-width: 100%; }
+  #page .hentry.page {
+    margin-top: 0; }
 
 .site-footer {
   margin: 1em 0;
@@ -430,7 +435,7 @@ a:hover, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 0; }
 
 .page-links {
   clear: both;
@@ -575,6 +580,41 @@ object {
 
 .gallery-caption {
   display: block; }
+
+.castleton__headline, h1 {
+  text-transform: uppercase;
+  font-family: "Playfair Display", Monaco, "Times New Roman", Times, serif;
+  margin: 0 0 10px;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0;
+  color: #a7947b;
+  font-weight: normal; }
+
+.castleton__subheadline, h2, h3, h4, h5 {
+  color: #a7947b;
+  margin: 0;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+.cw-button {
+  display: inline-block;
+  font-family: "Work Sans", Monaco, Helvetica, sans-serif;
+  color: #a7947b;
+  border: 2px solid #a7947b;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 auto; }
+  .cw-button:hover, .cw-button:active {
+    background-color: #a7947b;
+    color: #ffffff; }
+  .cw-button:active, .cw-button:focus {
+    border-color: #00667d; }
 
 .cw-site-header {
   -webkit-font-smoothing: antialiased;

@@ -1,0 +1,20 @@
+.cw-button {
+	display: inline-block;
+	font-family: $typography-sans;
+	color: $clay;
+	border: 2px solid $clay;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin: 0 auto;
+
+	&:hover, &:active {
+		background-color: $clay;
+		color: #ffffff;
+	}
+	&:active, &:focus {
+		border-color: $blue-ridge;
+	}
+}

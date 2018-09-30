@@ -108,7 +108,20 @@ if ( ! function_exists( 'gutenbergtheme_setup' ) ) :
 				'slug'  => 'dark-oak',
 				'color' => '#32261e',
 			),
+			array(
+				'name'  => __( 'White', 'gutenbergtheme' ),
+				'slug'  => 'white',
+				'color' => '#ffffff',
+			),
+			array(
+				'name'  => __( 'Almost Black', 'gutenbergtheme' ),
+				'slug'  => 'almost-black',
+				'color' => '#111111',
+			),
 		) );
+		// Remove support for color anarchy
+		add_theme_support( 'disable-custom-colors' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'gutenbergtheme_setup' );
@@ -136,7 +149,7 @@ function gutenbergtheme_fonts_url() {
 	 * supported by Noto Serif, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$font_families = ["Playfair Display", "Roboto Condensed", "Work Sans"];
+	$font_families = ["Playfair Display", "Roboto Condensed:300,400", "Work Sans"];
 
 	$query_args = array(
 		'family' => urlencode( implode( '|', $font_families ) ),

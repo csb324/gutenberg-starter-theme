@@ -1,5 +1,5 @@
 .entry-content > *, .block-container {
-  margin: 36px auto;
+  margin: 18px auto;
   max-width: 900px;
   padding-left: 14px;
   padding-right: 14px; }
@@ -10,6 +10,9 @@
 .entry-content > .alignfull {
   margin: 1.5em 0;
   max-width: 100%; }
+
+.entry-content > .castleton-hero {
+  margin-top: 0; }
 
 .entry-content ul,
 .entry-content ol {
@@ -112,24 +115,48 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 --------------------------------------------------------------*/
 .has-warm-gray-color {
   color: #d7d2cb; }
+  .has-warm-gray-color h1, .has-warm-gray-color h2, .has-warm-gray-color h3, .has-warm-gray-color h4, .has-warm-gray-color h5, .has-warm-gray-color h6 {
+    color: #d7d2cb; }
 
 .has-warm-gray-background-color {
   background-color: #d7d2cb; }
 
 .has-clay-color {
   color: #a7947b; }
+  .has-clay-color h1, .has-clay-color h2, .has-clay-color h3, .has-clay-color h4, .has-clay-color h5, .has-clay-color h6 {
+    color: #a7947b; }
 
 .has-clay-background-color {
   background-color: #a7947b; }
 
 .has-blue-ridge-color {
   color: #00667d; }
+  .has-blue-ridge-color h1, .has-blue-ridge-color h2, .has-blue-ridge-color h3, .has-blue-ridge-color h4, .has-blue-ridge-color h5, .has-blue-ridge-color h6 {
+    color: #00667d; }
 
 .has-blue-ridge-background-color {
   background-color: #00667d; }
 
 .has-dark-oak-color {
   color: #32261e; }
+  .has-dark-oak-color h1, .has-dark-oak-color h2, .has-dark-oak-color h3, .has-dark-oak-color h4, .has-dark-oak-color h5, .has-dark-oak-color h6 {
+    color: #32261e; }
 
 .has-dark-oak-background-color {
   background-color: #32261e; }
+
+.has-white-color {
+  color: #ffffff; }
+  .has-white-color h1, .has-white-color h2, .has-white-color h3, .has-white-color h4, .has-white-color h5, .has-white-color h6 {
+    color: #ffffff; }
+
+.has-white-background-color {
+  background-color: #ffffff; }
+
+.has-almost-black-color {
+  color: #111111; }
+  .has-almost-black-color h1, .has-almost-black-color h2, .has-almost-black-color h3, .has-almost-black-color h4, .has-almost-black-color h5, .has-almost-black-color h6 {
+    color: #111111; }
+
+.has-almost-black-background-color {
+  background-color: #111111; }

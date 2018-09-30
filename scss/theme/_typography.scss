@@ -1,0 +1,20 @@
+.castleton__headline, h1 {
+	text-transform: uppercase;
+	font-family: $typography-serif;
+	margin: 0 0 10px;
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: 0;
+	color: $clay;
+	font-weight: normal;
+}
+
+.castleton__subheadline, h2, h3, h4, h5 {
+	color: $clay;
+	margin: 0;
+	font-family: $typography-condensed;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+

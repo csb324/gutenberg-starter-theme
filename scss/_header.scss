@@ -1,7 +1,7 @@
 .cw-site-header {
-  -webkit-font-smoothing: antialiased;
   background-color: rgba($dark-oak, 0.8);
-  color: $white;
+	color: $white;
+	z-index: 100;
 
   left: 0;
   right: 0;
